@@ -12,6 +12,7 @@ public class mainapp {
 
 		//Creo una cola de castigo sin utilizar expresión lambda
 		Compa comparador1 = new Compa();
+		@SuppressWarnings("unused")
 		ColaDeCastigo<String> cdc2 = new ColaDeCastigo<String>(comparador1);
 		
 		//Creo una cola de castigo utilizando expresión lambda

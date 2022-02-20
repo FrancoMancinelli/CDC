@@ -184,7 +184,7 @@ public class ColaDeCastigo<E> {
 				throw new LlevateTuNullDeAquiException("ERR0R >>> No se puede añadir un elemento NULL <<< ERR0R");
 			} else {
 				miQueue.add(e);
-				miQueue.sort(miComparador);
+				miQueue.sort(miComparador); //Siempre que se añada algo, se ordenara según el comparador
 				return true;
 			}
 		} else {

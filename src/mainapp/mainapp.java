@@ -87,9 +87,9 @@ public class mainapp {
 		//cdc.clear();
 
 		//Pruebo el método offer
-		System.out.println("Queue offer = " + cdc.offer("M"));
-		System.out.println("Queue offer = " + cdc.offer("N"));
-		System.out.println("Queue offer = " + cdc.offer("L"));
+		System.out.println("Queue offer (M) = " + cdc.offer("M"));
+		System.out.println("Queue offer (N) = " + cdc.offer("N"));
+		System.out.println("Queue offer (L) = " + cdc.offer("L"));
 		recorrerQueue(cdc);
 		
 		//Pruebo el método remove

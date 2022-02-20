@@ -170,7 +170,7 @@ public class ColaDeCastigo<E> {
 	}
 
 	/**
-	 * Añade el elemento dado a la queue
+	 * Añade el elemento dado a la queue y ordena la queue de forma ascendente
 	 * @param e Elemento a añadir
 	 * @return True en caso de ser añadido, False en caso contrario
 	 * @throws LlevateTuNullDeAquiException En caso de querer introducir un elemento null
@@ -182,12 +182,14 @@ public class ColaDeCastigo<E> {
 				throw new LlevateTuNullDeAquiException("ERR0R >>> No se puede añadir un elemento NULL <<< ERR0R");
 			} else {
 				miQueue.add(e);
+				miQueue.sort(miComparador);
 				return true;
 			}
 		} else {
 			throw new ColaExceededSizeException("ERR0R >>> La queue esta llena, por lo que no acepta nuevos elementos. Elimina uno primero <<< ERR0R");
 		}
 	}
+	
 
 	/**
 	 * Añade el elemento dado a la queue

@@ -150,6 +150,9 @@ public class ColaDeCastigo<E> {
 	 * @throws Exception En caso de que se vaya a quedar vacia
 	 */
 	public boolean retainAll(Collection<E> c) throws Exception {
+		//Creo una colección auxiliar para comprobar si al aplicar el método esta
+		//quedaría vacia, de ser así, no se podría aplicar a la queue original y
+		//lanzaria la exception
 		ArrayList<E> aux = new ArrayList<E>();
 		aux.addAll(miQueue);
 		aux.retainAll(c);
